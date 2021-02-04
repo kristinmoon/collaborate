@@ -4,7 +4,7 @@
 A collaborative whiteboard for sharing ideas: Whether you're creating a MMORPG or designing an event, this is the place to share and develop your ideas with collaborators.
 
 ## Deployment
-Collaborate is published via Heroku at: https://afternoon-stream-77547.herokuapp.com/
+Collaborate is published via Heroku at: https://glacial-dusk-52239.herokuapp.com/
 
 Get a feel for the application in the below screenshots...
 ![Collaborate Homepage](./public/images/homepage.png)
