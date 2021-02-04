@@ -1,0 +1,18 @@
+<a class="sans-serif" style="color: var(--color-forest)" href="/profile/{{board.user.id}}"> &larr; Back to your
+  profile</a>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <h2 style="color: var(--color-dark-blue)">{{board.title}}</h2>
+      <p class="sans-serif">{{board.description}}</p>
+      <p class="sans-serif">by {{board.user.username}} on {{format_date board.created_at}}</p>
+    </div>
+  </div>
+
+  {{> board-editor}}
+  {{!-- needs to load the JSON for the board id into board-editor --}}
+
+</div>
+
+<script src="/js/delete-board.js"></script>

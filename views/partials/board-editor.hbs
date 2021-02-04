@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col s12 m12 l4">
+    <div style="margin: 1rem;">
+      <button id="add-circle" class="waves-effect waves-light btn btn-info">
+        <i class="material-icons left">add_box</i>Add Circle</button>
+    </div>
+
+    <div style="margin: 1rem;">
+      <button id="add-rectangle" class="waves-effect waves-light btn btn-info">
+        <i class="material-icons left">add_box</i>Add Rectangle</button>
+    </div>
+
+    <div style="margin: 1rem;">
+      <button id="add-triangle" class="waves-effect waves-light btn btn-info">
+        <i class="material-icons left">add_box</i>Add Triangle</button>
+    </div>
+
+    <div style="margin: 1rem;">
+      <button id="add-line" class="waves-effect waves-light btn btn-info">
+        <i class="material-icons left">remove</i>Add Line</button>
+    </div>
+
+    <div style="margin: 1rem;">
+      <button id="add-text" class="waves-effect waves-light btn btn-info">
+        <i class="material-icons left">short_text</i>Add Text</button>
+    </div>
+
+    <div style="margin: 1rem;">
+      <button id="drawing-mode" class="waves-effect waves-light btn btn-info">
+        <i class="material-icons left">create</i>Enter drawing mode</button><br>
+
+      <div id="drawing-mode-options" style="display: none;">
+        <label for="drawing-mode-selector">Mode:</label>
+        <select id="drawing-mode-selector" class="browser-default">
+          <option>Pencil</option>
+          <option>Circle</option>
+          <option>Spray</option>
+          <option>Pattern</option>
+
+          <option>hline</option>
+          <option>vline</option>
+          <option>square</option>
+          <option>diamond</option>
+          <option>texture</option>
+        </select><br>
+
+        <label for="drawing-line-width">Line width:</label>
+        <span class="info">30</span><input type="range" value="30" min="0" max="150" id="drawing-line-width"><br>
+
+        <label for="drawing-color">Line color:</label>
+        <input type="color" value="#005E7A" id="drawing-color"><br>
+
+        <label for="drawing-shadow-color">Shadow color:</label>
+        <input type="color" value="#005E7A" id="drawing-shadow-color"><br>
+
+        <label for="drawing-shadow-width">Shadow width:</label>
+        <span class="info">0</span><input type="range" value="0" min="0" max="50" id="drawing-shadow-width"><br>
+
+        <label for="drawing-shadow-offset">Shadow offset:</label>
+        <span class="info">0</span><input type="range" value="0" min="0" max="50" id="drawing-shadow-offset"><br>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m12 l8">
+    <canvas id="c" width="800" height="600"></canvas>
+  </div>
+</div>
+
+<script type="text/javascript" src="/js/board.js"></script>
+<script type="text/javascript" src="/js/board_controller.js"></script>
+<script type="text/javascript" src="/js/drawing.js"></script>

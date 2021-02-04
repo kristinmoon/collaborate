@@ -1,0 +1,56 @@
+<div class="container">
+  <h2 style="color: var(--color-dark-blue)">Your Profile</h2>
+  <div class="section">
+    <h3>Create a New Board</h3>
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="board-title" type="text" data-length="40">
+            <label for="board-title" class="sans-serif">Title</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="board-description" class="materialize-textarea" data-length="750"></textarea>
+            <label for="board-description" class="sans-serif">Description</label>
+          </div>
+        </div>
+      </form>
+
+      <div class="col">
+        <div style="margin: 0rem;">
+          <button id="clear-canvas" class="btn btn-info" style="background: var(--color-dark-blue)"><i
+              class="material-icons left">cancel</i>Clear</button><br>
+        </div>
+      </div>
+
+      <div class="col">
+        <div style="margin: 0rem;">
+          <button id="save-board" class="btn btn-info" style="background: var(--color-forest)"><i
+              class="material-icons left">save</i>Save</button><br>
+        </div>
+      </div>
+
+      {{!-- <div class="col s2">
+        <div style="margin: 0rem;">
+          <button id="delete-canvas" class="btn btn-info" style="background: var(--color-vermillion)"><i
+              class="material-icons left">delete</i>Delete</button><br>
+        </div>
+      </div> --}}
+    </div>
+  </div>
+  {{> board-editor}}
+  <div class="divider"></div>
+  <div class="section">
+
+    {{#if boards}}
+    <h3>Your Boards</h3>
+    <div class="row">
+      {{#each boards as |board|}}
+      {{> board-info-homepage board}}
+      {{/each}}
+    </div>
+    {{/if}}
+  </div>
+</div>

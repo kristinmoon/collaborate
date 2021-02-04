@@ -1,0 +1,39 @@
+<div id="signup-modal" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h4>Register to Collaborate</h4>
+      <form class="col s12" id="signup-form">
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="eg. th3Coll4broat0r" id="reg_username" type="text" class="validate"  required="" aria-required="true">
+            <label for="reg_username">Desired Username*</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="reg_password" type="password" class="validate" required="" aria-required="true">
+            <label for="reg_password">Password*</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="reg_confirm_password" type="password" class="validate" required="" aria-required="true">
+            <label for="reg_confirm_password">The same Password as above*</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="reg_email" type="email" class="validate">
+            <label for="reg_email">Email</label>
+          </div>
+        </div>
+      </form>
+      <div class="modal-info">
+        <p>Items marked with an * are required fields.</p>
+        <a href="#!">User Agreement</a>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!">Already signed up?</a>
+      <button class="btn btn-register" type="submit" form="signup-form">register</button>
+    </div>
+</div>
