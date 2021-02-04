@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A super cool colab tool",
   "main": "app.js",
+  "engines": {
+    "node": "14.15.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "debug": "node --inspect app.js",
@@ -12,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joe-riley/collaborative-whiteboard.git"
+    "url": "https://github.com/kristinmoon/collaborate"
   },
   "keywords": [
     "collaboration",
@@ -20,11 +23,10 @@
     "fabric"
   ],
   "author": "yes",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joe-riley/collaborative-whiteboard/issues"
+    "url": "https://github.com/kristinmoon/collaborate/issues"
   },
-  "homepage": "https://github.com/joe-riley/collaborative-whiteboard#readme",
+  "homepage": "https://github.com/kristinmoon/collaborate#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.1.0",
@@ -37,7 +39,7 @@
     "handlebars": "^4.7.6",
     "heroku": "^7.47.12",
     "materialize": "^1.0.0",
-    "mysql-db-seed": "0.0.4",
+    "mysql-db-seed": "^0.0.4",
     "mysql2": "^2.2.5",
     "node": "^15.7.0",
     "sequelize": "^6.5.0"
