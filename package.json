@@ -39,6 +39,7 @@
     "materialize": "^1.0.0",
     "mysql-db-seed": "0.0.4",
     "mysql2": "^2.2.5",
+    "node": "^15.7.0",
     "sequelize": "^6.5.0"
   },
   "devDependencies": {
